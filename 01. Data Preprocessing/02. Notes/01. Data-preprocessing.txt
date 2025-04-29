@@ -1,0 +1,30 @@
+Machine Learning proccess
+
+1. Data preproccesing 
+- Import Data
+- Clean Data
+- Split into training & test sets (20% test 80% tarining)
+
+2. Modelling
+- Build Model
+- Train Model
+- Make Prediction
+
+3. Evaluation
+- Make a verdict
+- Calculate perdormace metrics
+
+Training and test sets
+
+Feature scalling - apply with column
+1. Normalization - (X - Xmin) / (Xmax - Xmin)
+2. Standardization - (X - Xaverage) / (Standard deviation)
+
+Always scale features that are comparable
+- Normalization
+- Standardization
+
+features - information that may help to solve prediction
+dependent variable - the information variable what we want to solve
+
+
