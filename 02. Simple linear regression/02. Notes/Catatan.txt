@@ -1,0 +1,2 @@
+01. Kalau virtual env ada di terminal bash dan kita tidak menggunakan venv, maka
+ketik "exec bash" untuk menguhlangkan (venv) dalam git bash
