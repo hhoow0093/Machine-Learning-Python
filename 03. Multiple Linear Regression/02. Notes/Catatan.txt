@@ -1,0 +1,29 @@
+1. Dalam multiple linear regression, jika sebuah kolumn memiliki categorical data, maka dummy variable yang harus dibuat dari 
+categorical data tersebut adalah (jumlah category - 1). (jumlah category - 1) dapat meminimalisir terjadinya dummy variable trap
+atau multi colinearity dalam linear regression. 
+
+2. Statistical significance
+
+3. Building a model
+ - All in cases
+    1. Prior knowledge
+    2. you HAVE TO
+ - Backward elimination
+    1. Select the significance level to use in the model (alpha = 0.05)
+    2. Fit the full model with all possible predictors
+    3. Consider the predictor with the highest P VALUE. if P VALUE > Significance level, THEN proceed to STEP 4
+    4. remove the predictor
+    5. Fit the model without this variable, IF largest P VALUE is still greater than Significance level, GO TO 3. otherwise FINISH.
+ - Forward selection
+    1. Select the significance level to use in the model (alpha = 0.05)
+    2. Fit all regression model y ~ Xn select the one with the lowest P VALUE
+    3. Keep this variable and fit all possible models with one extra predictor added to the one(s) that you already HAVE
+    4. consider the predictor with the lowest P VALUE. if P VALUE < Significance level, GO TO 3. otherwise keep the previous model
+- Bidirectional elimination
+    1. Select the significance level to stay and enter. 
+    2. Perform the next step of forward selection (new variables must have P < Significance level (SLENTER) to enter)
+    3. Perform all steps of backward elimination (the entered variable must have P < Significance level (SLSTAY) to stay). PROCEED TO 2
+    4. IF no new variables can enter and no old variables can exit
+    5. Your model is ready
+
+
